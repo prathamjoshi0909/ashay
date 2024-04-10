@@ -18,6 +18,7 @@ main {
     animation: 
         typing 5s steps(40, end),
         blink-caret .75s step-end infinite;
+    word-wrap: break-word; /* Wrap long words to the next line */
 }
 
 /* The typing effect */
