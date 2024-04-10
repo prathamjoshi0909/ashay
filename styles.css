@@ -2,7 +2,7 @@ body {
     font-family: 'Indie Flower', cursive;
     margin: 0;
     padding: 0;
-    color: black; /* Set text color to white for better contrast */
+    color: black;
 }
 
 main {
@@ -10,25 +10,12 @@ main {
 }
 
 .typewriter {
-    /*font-size: 24px;*/
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typewriter cursor */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-        typing 5s steps(40, end),
-        blink-caret .75s step-end infinite;
-    word-wrap: break-word; /* Wrap long words to the next line */
-}
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+    font-size: 1.5rem; /* Adjust font size */
+    margin: 0 auto;
+    letter-spacing: .15em;
+    white-space: pre-line; /* Preserve newline characters */
+    height: 3em; /* Set a fixed height */
+    line-height: 1.5em; /* Set line height for readability */
+    word-wrap: break-word;
+    
 }
